@@ -12,7 +12,7 @@ class HomeVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var dataRowArray: [Row]?
+    var dataRowArray: [Rows]?
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
@@ -29,6 +29,7 @@ class HomeVC: UIViewController {
         DataManager.sharedInstance.getDataForRow { [weak self] (error, model) in
             self?.dataRowArray = model?.rows
             DispatchQueue.main.async {
+                self?.title = model?.title ?? ""
                 self?.appDelegate.hideLoadingView()
                 self?.tableView.reloadData()
             }
@@ -37,15 +38,20 @@ class HomeVC: UIViewController {
     
 }
 
-extension HomeVC: UITableViewDelegate {
-    
-}
-
 extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if let arr = dataRowArray {
+            return arr.count
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell {
+            if let arr = dataRowArray {
+                cell.configureCell(data: arr[indexPath.row])
+            }
+            return cell
+        }
         return UITableViewCell()
     }
 }

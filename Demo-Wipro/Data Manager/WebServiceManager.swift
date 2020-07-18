@@ -22,16 +22,13 @@ class WebServiceManager {
        
         let task = session.dataTask(with: request, completionHandler: { data, response, error in
             // Check the response
-            print(response)
-            
             if error != nil {
                 completion(error, nil)
             }
-            if let data = data {
-                completion(nil, data)
+            if let data = data, let resData = String(decoding: data, as: UTF8.self).data(using: .utf8) {
+                completion(nil, resData)
             }
         })
         task.resume()
-        
     }
 }
