@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		44FBF9FF24C2E1C0002AC926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBF9FE24C2E1C0002AC926 /* AppDelegate.swift */; };
 		44FBFA0124C2E1C0002AC926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA0024C2E1C0002AC926 /* SceneDelegate.swift */; };
-		44FBFA0324C2E1C0002AC926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA0224C2E1C0002AC926 /* ViewController.swift */; };
 		44FBFA0624C2E1C0002AC926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FBFA0424C2E1C0002AC926 /* Main.storyboard */; };
 		44FBFA0924C2E1C0002AC926 /* Demo_Wipro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA0724C2E1C0002AC926 /* Demo_Wipro.xcdatamodeld */; };
 		44FBFA0B24C2E1C3002AC926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FBFA0A24C2E1C3002AC926 /* Assets.xcassets */; };
 		44FBFA0E24C2E1C3002AC926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FBFA0C24C2E1C3002AC926 /* LaunchScreen.storyboard */; };
+		44FBFA1A24C2EF67002AC926 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA1924C2EF67002AC926 /* HomeVC.swift */; };
+		44FBFA1E24C2F052002AC926 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA1D24C2F052002AC926 /* HomeTableViewCell.swift */; };
+		44FBFA2224C2F27D002AC926 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA2024C2F27D002AC926 /* LoadingView.swift */; };
+		44FBFA2324C2F27D002AC926 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FBFA2124C2F27D002AC926 /* LoadingView.xib */; };
+		44FBFA2524C2F2D9002AC926 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA2424C2F2D9002AC926 /* DataManager.swift */; };
+		44FBFA2824C2F34F002AC926 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA2724C2F34F002AC926 /* WebServiceManager.swift */; };
+		44FBFA2A24C2F584002AC926 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBFA2924C2F584002AC926 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44FBF9FB24C2E1C0002AC926 /* Demo-Wipro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Wipro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FBF9FE24C2E1C0002AC926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FBFA0024C2E1C0002AC926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44FBFA0224C2E1C0002AC926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44FBFA0524C2E1C0002AC926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44FBFA0824C2E1C0002AC926 /* Demo_Wipro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Demo_Wipro.xcdatamodel; sourceTree = "<group>"; };
 		44FBFA0A24C2E1C3002AC926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44FBFA0D24C2E1C3002AC926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44FBFA0F24C2E1C3002AC926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FBFA1924C2EF67002AC926 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		44FBFA1D24C2F052002AC926 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		44FBFA2024C2F27D002AC926 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		44FBFA2124C2F27D002AC926 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		44FBFA2424C2F2D9002AC926 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		44FBFA2724C2F34F002AC926 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		44FBFA2924C2F584002AC926 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,86 @@
 		44FBF9FD24C2E1C0002AC926 /* Demo-Wipro */ = {
 			isa = PBXGroup;
 			children = (
-				44FBF9FE24C2E1C0002AC926 /* AppDelegate.swift */,
-				44FBFA0024C2E1C0002AC926 /* SceneDelegate.swift */,
-				44FBFA0224C2E1C0002AC926 /* ViewController.swift */,
-				44FBFA0424C2E1C0002AC926 /* Main.storyboard */,
-				44FBFA0A24C2E1C3002AC926 /* Assets.xcassets */,
-				44FBFA0C24C2E1C3002AC926 /* LaunchScreen.storyboard */,
+				44FBFA1524C2EEB3002AC926 /* App Delegate */,
+				44FBFA1624C2EEC3002AC926 /* StoryBoard */,
+				44FBFA1724C2EEDD002AC926 /* ViewControllers */,
+				44FBFA1B24C2EFFB002AC926 /* Data Manager */,
+				44FBFA1C24C2F01D002AC926 /* Custom Cells */,
+				44FBFA1F24C2F269002AC926 /* Custom Views */,
+				44FBFA1824C2EEF9002AC926 /* Sources */,
 				44FBFA0F24C2E1C3002AC926 /* Info.plist */,
-				44FBFA0724C2E1C0002AC926 /* Demo_Wipro.xcdatamodeld */,
 			);
 			path = "Demo-Wipro";
+			sourceTree = "<group>";
+		};
+		44FBFA1524C2EEB3002AC926 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA0024C2E1C0002AC926 /* SceneDelegate.swift */,
+				44FBF9FE24C2E1C0002AC926 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		44FBFA1624C2EEC3002AC926 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA0424C2E1C0002AC926 /* Main.storyboard */,
+				44FBFA0C24C2E1C3002AC926 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		44FBFA1724C2EEDD002AC926 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA1924C2EF67002AC926 /* HomeVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		44FBFA1824C2EEF9002AC926 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA0A24C2E1C3002AC926 /* Assets.xcassets */,
+				44FBFA0724C2E1C0002AC926 /* Demo_Wipro.xcdatamodeld */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		44FBFA1B24C2EFFB002AC926 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA2624C2F2DF002AC926 /* Model */,
+				44FBFA2424C2F2D9002AC926 /* DataManager.swift */,
+				44FBFA2724C2F34F002AC926 /* WebServiceManager.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		44FBFA1C24C2F01D002AC926 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA1D24C2F052002AC926 /* HomeTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		44FBFA1F24C2F269002AC926 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA2024C2F27D002AC926 /* LoadingView.swift */,
+				44FBFA2124C2F27D002AC926 /* LoadingView.xib */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		44FBFA2624C2F2DF002AC926 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44FBFA2924C2F584002AC926 /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FBFA0E24C2E1C3002AC926 /* LaunchScreen.storyboard in Resources */,
+				44FBFA2324C2F27D002AC926 /* LoadingView.xib in Resources */,
 				44FBFA0B24C2E1C3002AC926 /* Assets.xcassets in Resources */,
 				44FBFA0624C2E1C0002AC926 /* Main.storyboard in Resources */,
 			);
@@ -142,9 +225,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FBFA0924C2E1C0002AC926 /* Demo_Wipro.xcdatamodeld in Sources */,
-				44FBFA0324C2E1C0002AC926 /* ViewController.swift in Sources */,
+				44FBFA1E24C2F052002AC926 /* HomeTableViewCell.swift in Sources */,
+				44FBFA1A24C2EF67002AC926 /* HomeVC.swift in Sources */,
+				44FBFA2524C2F2D9002AC926 /* DataManager.swift in Sources */,
+				44FBFA2824C2F34F002AC926 /* WebServiceManager.swift in Sources */,
 				44FBF9FF24C2E1C0002AC926 /* AppDelegate.swift in Sources */,
 				44FBFA0124C2E1C0002AC926 /* SceneDelegate.swift in Sources */,
+				44FBFA2224C2F27D002AC926 /* LoadingView.swift in Sources */,
+				44FBFA2A24C2F584002AC926 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HU3J7S3Q8;
 				INFOPLIST_FILE = "Demo-Wipro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HU3J7S3Q8;
 				INFOPLIST_FILE = "Demo-Wipro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="ReachLabs" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LoadingView" id="iN0-l3-epB" customClass="LoadingView" customModule="ReachLabs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-fW-q2Y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vz9-Nx-ufU">
+                            <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gjU-YR-lvF">
+                                    <rect key="frame" x="55" y="40" width="40" height="40"/>
+                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="Axo-Ha-GbS"/>
+                                        <constraint firstAttribute="height" constant="40" id="tuX-kt-3mr"/>
+                                    </constraints>
+                                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait ..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw1-NM-R9l">
+                                    <rect key="frame" x="0.0" y="95" width="150" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="ald-A3-MAW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="aw1-NM-R9l" secondAttribute="trailing" id="3EU-TR-Nyj"/>
+                                <constraint firstItem="aw1-NM-R9l" firstAttribute="leading" secondItem="Vz9-Nx-ufU" secondAttribute="leading" id="6d3-8a-002"/>
+                                <constraint firstItem="gjU-YR-lvF" firstAttribute="top" secondItem="Vz9-Nx-ufU" secondAttribute="top" constant="40" id="90r-zj-pLv"/>
+                                <constraint firstAttribute="width" constant="150" id="CKV-sQ-xt5"/>
+                                <constraint firstAttribute="height" constant="150" id="lgu-oY-PIJ"/>
+                                <constraint firstItem="gjU-YR-lvF" firstAttribute="centerX" secondItem="Vz9-Nx-ufU" secondAttribute="centerX" id="lrf-La-ISt"/>
+                                <constraint firstItem="aw1-NM-R9l" firstAttribute="top" secondItem="gjU-YR-lvF" secondAttribute="bottom" constant="15" id="nHL-Pc-xKc"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vz9-Nx-ufU" firstAttribute="centerX" secondItem="fhx-fW-q2Y" secondAttribute="centerX" id="NEJ-FV-svP"/>
+                        <constraint firstItem="Vz9-Nx-ufU" firstAttribute="centerY" secondItem="fhx-fW-q2Y" secondAttribute="centerY" id="xeH-B1-kqz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fhx-fW-q2Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DRA-Ux-cDb"/>
+                <constraint firstAttribute="bottom" secondItem="fhx-fW-q2Y" secondAttribute="bottom" id="chw-0y-hkT"/>
+                <constraint firstItem="fhx-fW-q2Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eG5-sD-n9t"/>
+                <constraint firstAttribute="trailing" secondItem="fhx-fW-q2Y" secondAttribute="trailing" id="o8m-PT-CSk"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-149" y="351"/>
+        </view>
+    </objects>
+</document>
