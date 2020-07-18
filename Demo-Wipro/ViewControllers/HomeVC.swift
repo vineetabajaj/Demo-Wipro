@@ -9,14 +9,26 @@
 import UIKit
 
 class HomeVC: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var dataRowArray: [Rows]?
+    var refreshControl = UIRefreshControl()
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+
+    @objc func refresh(_ sender: Any) {
+        //  your code to reload tableView
+        initialSetup()
+        refreshControl.endRefreshing()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,7 +58,7 @@ extension HomeVC: UITableViewDataSource {
         return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as? HomeTableViewCell {
             if let arr = dataRowArray {
                 cell.configureCell(data: arr[indexPath.row])
             }

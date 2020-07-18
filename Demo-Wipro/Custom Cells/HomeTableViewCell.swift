@@ -14,7 +14,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var imageHrefView: UIImageView!
     @IBOutlet weak var desLabel: UILabel!
     
-    
+    static let identifier = "HomeTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
